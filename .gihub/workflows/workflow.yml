@@ -1,0 +1,13 @@
+name: Workflow Getting Started Part 1
+on:
+  push:
+    branches:
+      - main
+  push_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container: python:3.9-slim
